@@ -1,0 +1,370 @@
+*{
+	direction: rtl;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	font-family: Exo;
+}
+.clear{
+    clear: both;
+}
+/* Start Menu1 */
+header{	
+	background-color: white;
+}
+.website-header{
+	font-family: "Aljazeera";
+	padding: 30px 60px;
+	margin: 0 30;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.website-header img{
+	float: left;
+	width: 70px;
+	height: 60px;	
+	margin: 0 10px;
+}
+#img11{
+margin-right: 75px;
+}
+.website-header h4{
+	padding: 0;
+	margin: 0;
+	margin-top: 5px;
+	color: black;
+}
+h4 p{
+	font-size: 13px;
+	font-weight: bold;
+}
+.social-icons{
+	margin: 0 75px;
+	margin-top: 10px;
+	text-align: left;
+	flex-grow: 1;
+}
+.social-icons i{
+	margin: 0 7px;
+	cursor: pointer;
+	color: #b0af76;
+}
+.social-icons i:hover{
+	margin: 0 7px;
+	cursor: pointer;
+	color: #e08b6c;
+}
+/* End Menu1 */
+/* Start Menu2 */
+nav{
+	font-family: "ArbFONTS-Nahdi-Black";
+	background-color: #f5f1e0;
+	height: 50px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	
+}
+.navbar-nav li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 20px;
+	text-align: center;
+}
+.navbar-nav li a{
+	color: #3b2618;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 800;
+}
+.navbar-nav li a:hover{
+	color:#e08b6c;
+}
+nav .search{
+	width: 242px;
+	float: left;
+	margin-top: 14px;
+	margin-bottom: 18px;
+	margin-right: 20px;
+	border-radius: 5px;
+	border: none;
+	text-indent: 5px;
+}
+.dropdown{
+	z-index: 2;
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	width: 280px;
+	display: none;
+	position: absolute;
+	background-color: #f5f1e0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a{
+	padding: 12px 18px;
+	text-decoration: none;
+	display: block;
+	border-bottom:1px solid #ddd;
+}
+.dropdown-content a:last-child{
+	border-bottom: none;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown:hover .dropbtn{
+	color: #f5f1e0;
+	background-color: #3b2618;
+}
+
+/* End Menu1 */
+/*Start Content Css*/
+main .container{
+	font-family: "ArbFONTS-Nahdi-Black";
+    width: 80%;
+    margin: auto;
+}
+.headerpg{
+	background-color: #f2f2f2;
+	height: 50px;
+	padding: 10px 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-radius: 19px;
+}
+.headerpg ul{
+	list-style-type: none;
+	text-align: right;
+	
+}
+.headerpg li{
+	font-family: "ArbFONTS-Nahdi-Black";
+	font-size: 22px;
+	display: inline-block;
+	padding-left: 20px;
+	margin-left: 20px;
+	border-left: 1px solid #b0af76;
+	color: #b0af76;
+}
+.headerpg li:last-child{
+	border-left: none;
+}
+.main{
+	width: 100%;
+	justify-content: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin-bottom: 100px;
+	background-color: #f2f2f2;
+}
+.title{
+	width: 100%;
+	display: inline;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.main h1{
+	color: #3bb62b;
+	text-align: center;
+	font-family: ArbFONTS-Nahdi-Black;
+    font-size: 23px;
+    font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.profile-card{
+	position: relative;
+	width: 220px;
+	height: 220px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 50%;
+	box-shadow: 0 0 22px #333;
+	transition: 0.6s;
+	margin: 0 25px;
+}
+.main .box{
+	margin-top: 70px;
+	margin-left: 120px;
+}
+.main .m1{
+	margin-right: 410px;
+}
+.main .m2{
+	display: inline-block;
+}
+.profile-card:hover{
+	border-radius: 10px;
+	height: 260px;
+}
+.caption{
+	text-align: center;
+	transform: translateY(-80px);
+	opacity: 0;
+	transition: 0.6s;
+}
+.profile-card:hover .caption{
+	opacity: 1;
+}
+.caption h3{
+	font-size: 21px;
+}
+.caption p{
+	font-size: 16px;
+	color: #3bb62b;
+	margin: 2px 0 6px 0;
+}
+.profile-card .img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	transition: 0.6s;
+	z-index: 99;
+}
+.profile-card:hover .img{
+	transform: translateY(-60px);
+}
+.img img{
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0 0 22px #333;
+	transition: 0.6s;
+}
+.profile-card:hover img{
+	border-radius: 10px;
+}
+/*Start Footer Css*/
+.footer-sec{
+	height: 400px;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	padding-right: 100px;
+	background-color: #f5f1e0;
+}
+.footer-sec .content{
+	font-family: "ArbFONTS-Nahdi-Black";
+	width: 30%;
+	float: right;
+	text-align: right;
+	padding: 20px;
+	margin-right: 50px;
+}
+.content img{
+	width: 70px;
+	height: 60px;	
+	/* margin: 0 20px; */
+	text-align: right;
+}
+
+.footer-sec .content h3{
+	font-family: "Aljazeera";
+    color: #3b2618;
+	text-align: right;
+    padding: 0;
+	margin: 0;
+    margin-bottom: 30px;
+	display: inline-block;
+}
+.footer-sec .content p{
+	width: 280px;
+    color: #3b2618;
+	text-align: right;
+	/* margin: 0 30px 10px; */
+}
+.footer-sec .middle{
+	font-family:"ArbFONTS-Nahdi-Black";
+	text-align: right;
+	width: 30%;
+	float: right;
+	padding: 20px;
+}
+.footer-sec .middle h3{
+	font-family: "Aljazeera";
+    color: #3b2618;
+    padding: 0;
+	margin: 0;
+    margin-bottom: 30px;
+}
+.footer-sec .middle a{
+	text-align: center;
+	display: block;
+	font-size: 20px;
+    color: #3b2618;
+    padding: 0;
+	margin: 0;
+    margin-bottom: 30px;
+	margin-left: 100px;
+}
+.footer-sec .middle a i{
+	padding: 10px;
+	margin: 0 7px;
+	cursor: pointer;
+	color: #b0af76;
+}
+.footer-sec .middle a i:hover{
+	cursor: pointer;
+	color: #e08b6c;
+}
+.footer-sec .last{
+	font-family: "ArbFONTS-Nahdi-Black";
+	text-align: right;
+    float: right;
+	width: 30%;
+	padding: 20px;
+}
+.footer-sec .last h3{
+	font-family: "Aljazeera";
+    color: #3b2618;
+    padding: 0;
+	margin: 0;
+    margin-bottom: 30px;
+}
+.footer-sec .last a{
+	display: block;
+	font-size: 20px;
+    color: #3b2618;
+    padding: 0;
+	margin: 0;
+    margin-bottom: 30px;
+}
+/*End Footer Css*/
+@media only screen and (max-width: 600px) {
+	.breaking-news-section{	
+		padding: 10px;
+		flex-wrap: wrap;
+	}
+	#featured{
+		flex: auto;
+	}	
+	.news-section , .news-section article,.social-links section{
+		flex-basis: 100%;		
+	}
+	.social-links section{
+		margin-top: 10px;
+	}
+	.website-header img{
+		width: 45px;
+		height: 45px;
+		padding: 5px;
+	}
+	.website-header h1{
+		font-size: 15px;
+	}
+	.social-icons{
+		flex-basis: 100%;
+	}
+	.navbar-collapse{
+		background-color: black;
+		z-index: 16;
+	} 
+	.navbar-toggler-icon{
+		background-image: url(images/menu.jpg);
+		z-index: 16;
+	}
+}
